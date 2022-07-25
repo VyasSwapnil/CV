@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 8px 10vw;
+}
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: black;
+}
+li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.currentRole {
+  font-style: italic;
+}
+.currentRole a {
+  font-weight: bold;
+}
+
+.duration {
+  color: #cccccc;
+  font-weight: bold;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+#edu div,
+#exp div {
+  display: flex;
+  justify-content: space-between;
+}
+#edu div :first-child,
+#exp div :first-child {
+  font-weight: bold;
+}
+
+.heading {
+  color: #00802b;
+}
+
+.lightHrTag {
+  border-top: 1px dotted black;
+  color: #fff;
+  background-color: #fff;
+  height: 2px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#lang table,
+#skill table {
+  border-spacing: 30px 2px;
+  width: 100%;
+  text-align: center;
+}
+#lang td,
+#skill td {
+  padding: 20px;
+  border-bottom: 1px dashed black;
+}
