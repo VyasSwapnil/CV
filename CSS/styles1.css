@@ -1,22 +1,96 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 8px 10vw;
+  margin: 5vh 10vw;
 }
 hr {
   height: 2px;
   border-width: 0;
   background-color: black;
 }
+.lightHrTag {
+  border-top: 2px dotted black;
+  color: #fff;
+  background-color: #fff;
+  height: 2px;
+}
+/***************************************************about section***************************************************/
+img{
+  height: 150px;
+  width: 150px;
+}
+.div1, .div2, .div3 {
+  text-align: center;
+}
+.div2 {
+  color: #00802b;
+}
+.div3 {
+  font-style: italic;
+}
+.div3 > p > a {
+  font-weight: bold;
+}
+.div4 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.div5, .div6, .div7{
+  margin-bottom: 20px;
+}
+.div5 i, .div6 i, .div7 i {
+  margin-right: 20px;
+}
+.div5 a, .div6 a, .div7 a{
+  word-wrap: break-word;
+  text-decoration: none;
+}
+@media only screen and (min-width: 700px) {
+  .div3 br{
+    display: none;
+  }
+  .div4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .lightHrTag{
+    border-top: 1px dotted black;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  img {
+    height: 150px;
+    width: 150px;
+  }
+  .parent {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 0;
+  }
+  .div1 {
+    grid-row: 1/5;
+    justify-self: center;
+    align-self: center;
+  }
+  .div2, .div3, .div4 {
+    text-align: left;
+    grid-column: 2/5;
+  }
+  .div3 > p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .div4{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/***************************************************exp section***************************************************/
 li:not(:last-child) {
   margin-bottom: 20px;
 }
-.currentRole {
-  font-style: italic;
-}
-.currentRole a {
-  font-weight: bold;
-}
-
 .duration {
   color: #cccccc;
   font-weight: bold;
@@ -34,21 +108,20 @@ li:not(:last-child) {
   font-weight: bold;
 }
 
-.heading {
-  color: #00802b;
-}
 
-.lightHrTag {
-  border-top: 1px dotted black;
-  color: #fff;
-  background-color: #fff;
-  height: 2px;
-}
 .links {
   display: flex;
   justify-content: space-between;
 }
-
+.links > a {
+  color: #0060b6;
+  text-decoration: none;
+}
+.links > a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
 #lang table,
 #skill table {
   border-spacing: 30px 2px;
